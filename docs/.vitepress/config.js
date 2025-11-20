@@ -61,7 +61,7 @@ function buildComponentSidebarItems(rootDir) {
 
 /* ──────────────────────────────────────────────────────────────────────────── */
 
-const base = '/docs';
+const base = '/docs-new';
 
 const pdColorClasses = ['blue', 'cyan', 'fuchsia', 'indigo', 'pink', 'purple', 'sky', 'violet'].flatMap((color) =>
   ['bg', 'border'].flatMap((part) =>
@@ -385,6 +385,13 @@ export default defineConfig({
         text: "What's new",
         link: '/blog/',
         activeMatch: '/blog/$',
+      },
+      {
+        text: 'Version',
+        items: [
+          { text: 'V2', link: 'https://warp-ds.github.io/docs-new/' },
+          { text: 'V1', link: 'https://warp-ds.github.io/docs/' },
+        ],
       },
     ],
     sidebar: {
